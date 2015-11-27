@@ -1,0 +1,17 @@
+{
+  "name": "antavo/signed-token",
+  "description": "Library to create and check signed tokens",
+  "license": "GPL-2.0",
+  "require": {
+    "php": ">=5.3"
+  },
+  "require-dev": {
+    "apigen/apigen": "*",
+    "phpunit/phpunit": "4.8.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Antavo\\SignedToken\\": "src/"
+    }
+  }
+}
