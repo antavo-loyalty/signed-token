@@ -100,7 +100,7 @@ class SignedToken {
      * @return string
      * @final
      */
-    final protected function calculateDigest($payload) {
+    final public function calculateDigest($payload) {
         return $this->saltDigest(
             hash_hmac($this->algorithm, $payload, $this->secret)
         );
