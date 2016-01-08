@@ -78,7 +78,7 @@ class SignedToken {
      * @return string
      * @static
      */
-    private static function base64Decode($string) {
+    public static function base64Decode($string) {
         return base64_decode(strtr($string, '-_', '+/'));
     }
 
@@ -89,7 +89,7 @@ class SignedToken {
      * @return string
      * @static
      */
-    private static function base64Encode($string) {
+    public static function base64Encode($string) {
         return strtr(trim(base64_encode($string), '='), '+/', '-_');
     }
 
